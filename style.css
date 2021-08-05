@@ -3,12 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    padding-top: 60px;
+}
 .container-header{
-    
+    position: fixed;
+    top:0;
+    z-index: 99;  
     width: 100%;
     height: 9vh;
-    /* display: flex;
-    justify-content: center; */
+    background-color: white;
     box-shadow: #0000001A 0 4px 8px 0;
 }
 .box-header{
@@ -32,7 +36,7 @@
     text-decoration: none;
     color: #25294C;
     font-size: 21px;
-    font-family: 'Arial Narrow Bold', sans-serif;
+    font-family: 'Archivo', sans-serif;
     font-weight: 600;
 }
 
@@ -44,16 +48,17 @@
     background-color: #FFCE06;
     color: #25294C;
     font-size: 18px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Archivo', sans-serif;
     font-weight: 600;
     cursor: pointer;
     transition: 0.3s;
-    opacity: 0.9;
+    opacity: 0.8;
+    margin: 0 20px;
 }
 .btn:hover{
-    width: 183px;
+    transform: scale(1.1);
     opacity: 1;
-    height: 57px;
+    background-color: #fdd536;
 }
 .btn-lenguage{
     width: 23px;
@@ -64,9 +69,12 @@
     cursor: pointer;
     font-size: 8px;
     font-weight: 700;
+    font-family: 'Archivo', sans-serif;
     color: #25294C;
 }
 .container-father{
+    max-width: 1366px;
+    margin: auto;
     width: 99.2vw;
     display: flex;
     justify-content: center;
@@ -102,14 +110,14 @@
     flex-direction: column; 
 }
 .title-fs{
-    font-family: 'Arial Narrow Bold', sans-serif;
+    font-family: 'Archivo', sans-serif;
     font-size: 63px;
     font-weight: bold;
     text-align: left;
     color: #22254B;
 }
 .paragraph-fs{
-    font-family: Tahoma, sans-serif;
+    font-family: 'Archivo', sans-serif;
     font-size: 22px;
     font-weight:100;
     text-align: left;
@@ -132,7 +140,7 @@
 }
 .box-main-ss{
     width: 100%;
-    height: 90vh;
+    min-height: 30vh;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -158,14 +166,14 @@
     
 }
 .title-ss{
-    font-family: 'Arial Narrow Bold', sans-serif;
+    font-family: 'Archivo', sans-serif;
     font-size: 55px;
     font-weight: bold;
     text-align: center;
     color: #22254B;
 }
 .paragraph-ss{
-    font-family: Tahoma, sans-serif;
+    font-family: 'Archivo', sans-serif;
     font-size: 22px;
     font-weight:100;
     text-align: center;
@@ -173,9 +181,9 @@
 }
 .box-interactive{
     position: relative;
-    top: 50px;
+    top: 45px;
     width: 74vw;
-    height: 10vh;
+    height: 17vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -192,6 +200,9 @@
     border-radius: 10px 10px 10px 10px;
     cursor: pointer;
     transition: all 0.1s ease 0s;
+}
+.interactive-menu:hover{
+    background-color:#fdd843ce;
 }
 .interactive-menu:active{
     background-color:#FFCE06;
@@ -234,7 +245,7 @@
 .title-interactive{
     font-size: 40px;
     font-weight: bold;
-    font-family: monospace;
+    font-family: 'Archivo', sans-serif;
     text-align: left;
     color: #FFFFFF;
 }
@@ -242,16 +253,13 @@
     width: 80%;
     font-size: 17px;
     font-weight:normal;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Archivo', sans-serif;
     text-align:left;
     color: #FFFFFF;
 }
 .container-main-ts{
-    width: 99.2vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    max-width: 1366px;
+    margin: auto;
 }
 .third-screen{
     width:80vw;
@@ -274,15 +282,23 @@
 .title-ts{
     font-size: 55px;
     font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Archivo', sans-serif;
     color: #22254B;
     
 }
 .paragraph-ts{
     font-size: 29px;
     font-weight: normal;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Archivo', sans-serif;
     color: #22254B;
+}
+.teste123{
+    max-width: 1366px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .display-for-you{
     width: 99.2vw;
@@ -303,7 +319,7 @@
     width: 67%;
     font-size: 55px;
     font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Archivo', sans-serif;
     text-align: center;
     color: white;
 }
@@ -311,7 +327,82 @@
     width: 65%;
     font-size: 22px;
     font-weight: normal;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Archivo', sans-serif;
     text-align: center;
     color: white;
+}
+.teste1{
+    position: relative;
+    display: grid;
+    grid: 300px/ auto auto auto;
+    grid-gap: 20px;
+    padding: 25px;
+}
+.big-box{
+    width: 289px;
+    height: 309px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px 10px 10px 10px;
+    border: #22254B 2.5px solid;
+    font-family: 'Archivo', sans-serif;
+    text-align: center;
+    font-weight: 400;
+    padding: 5px;
+}
+.little-box{
+    width: 289px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 10px 10px;
+    border: #22254B 2.5px solid;
+    font-family: 'Archivo', sans-serif;
+    text-align: center;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 5px;
+}
+.teste232{
+    width: 99.2vw;
+    background-image: linear-gradient(rgba(83, 33, 196, 0.1) 10%, rgba(34, 37, 75, 0.1) 100%);;
+}
+.teste556{
+    max-width: 1366px;
+    margin: auto;
+    height: 370px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.box-text{
+    width: 70%;
+    height: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.title-bt-main{
+    font-family: 'Archivo', sans-serif;
+    text-align: center;
+    font-weight: 900;
+    font-size: 55px;
+    color: #22254B;
+}
+.paragraph-bt-main{
+    width: 99%;
+    font-family: 'Archivo', sans-serif;
+    text-align: center;
+    font-weight: 100;
+    font-size: 22px;
+    color: #22254B;
+}
+
+.container-footer{
+   
 }
