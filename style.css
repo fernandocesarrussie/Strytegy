@@ -11,8 +11,9 @@ body{
     top:0;
     z-index: 99;  
     width: 100%;
-    height: 9vh;
-    background-color: white;
+    height: 9vh;    
+    background-color: #fffffff7;
+    backdrop-filter: blur(5px);
     box-shadow: #0000001A 0 4px 8px 0;
 }
 .box-header{
@@ -90,7 +91,6 @@ body{
     height: 50%;
     display: flex;
     justify-content: space-evenly;
-    align-items: left;
     flex-direction: column; 
 }
 .title-fs{
@@ -108,13 +108,16 @@ body{
     color: #22254B;
 }
 .box-img-print{
-    width: 45%;
+    width: 47%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .img-print{
-    width:695px;
+    width:100%;
+}
+.box-main-ss{
+    background-image: linear-gradient(rgb(255, 255, 255) 10%, rgb(255, 250, 228) 100%);
 }
 .container-main-ss{
     max-width: 1366px;
@@ -125,7 +128,6 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
-    
 }
 .text-ss{
     width: 65%;
@@ -188,7 +190,7 @@ body{
     color: #22254B;
 }
 .demo-screen{
-    height: 45vh;
+    height: 50vh;
     background-color: #22254B;
 }
 .display-ss{
@@ -208,10 +210,15 @@ body{
     justify-content: space-around;
     align-items: center;
 }
+.box-img-interactive{
+    width: 31vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .img-interactive{
-    width: 496px;
-    height: 289px;
-
+    width: 100%;
 }
 .text-interactive{
     width: 40%;
@@ -221,6 +228,7 @@ body{
     justify-content: space-around;
 }
 .title-interactive{
+    width: 100%;
     font-size: 40px;
     font-weight: bold;
     font-family: 'Archivo', sans-serif;
@@ -249,6 +257,9 @@ body{
 .box-img-ts{
     width: 30%;
 }
+.img-ts{
+    width: 100%;
+}
 .box-text-ts{
     width: 50%;
     height: 40%;
@@ -271,7 +282,7 @@ body{
     color: #22254B;
 }
 .display-for-you{
-    width: 99.2vw;
+    width: 100%;
     height: 45vh;
     display: flex;
     justify-content: center;
@@ -319,8 +330,8 @@ body{
     padding: 25px;
 }
 .big-box{
-    width: 289px;
-    height: 309px;
+    width: 16vw;
+    height: 35vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -329,13 +340,17 @@ body{
     border: #22254B 2.5px solid;
     font-family: 'Archivo', sans-serif;
     text-align: center;
-    font-weight: 400;
+    font-weight: 500;
     padding: 5px;
     background-color: white;
 }
+.img-boxes{
+    width: 14vw;
+    margin-bottom: 13px;
+}
 .little-box{
-    width: 289px;
-    height: 200px;
+    width: 16vw;
+    height: 21vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -343,7 +358,7 @@ body{
     border: #22254B 2.5px solid;
     font-family: 'Archivo', sans-serif;
     text-align: center;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 15px;
     padding: 5px;
     background-color: white;
@@ -383,9 +398,6 @@ body{
     font-weight: 100;
     font-size: 22px;
     color: #22254B;
-}
-footer{
-   
 }
 .container-footer{
     width: 100%;
@@ -508,3 +520,85 @@ footer{
     color: #22254B;
     margin-bottom: 40px;
 }
+@media (max-width: 1080px) {
+    .box-header{
+          width: 100%;
+         justify-content: space-around;
+    }
+    .nav-menu{
+        width: 30%;
+    }
+    .container-main{
+        width: 90%;
+        height: 35vh;
+    }
+    .btn{
+        margin: unset;
+    }
+    .title-fs{
+        height: 35%;
+        font-size: 40px;
+    }
+    .title-ss {
+        font-size: 40px;
+    }
+    .box-interactive{
+        margin: auto;
+        width: 75%;
+    }
+    .box-display-ss {
+        height: 80%;
+        flex-direction: column;
+    }
+    .box-img-interactive {
+        width: 40vw;
+    }
+    .text-interactive {
+        width: 40vw;
+    }
+    .third-screen {
+        width: 100%;
+        flex-direction: column;
+        margin: 20px 0;
+    }
+    .box-img-ts {
+        width: 40%;
+    }
+    .box-text-ts {
+        justify-content: space-evenly;
+    }
+    .title-ts {
+        font-size: 40px;
+    }
+    .container-boxes{
+        height: 40vh;
+    }
+    .boxes {
+        bottom: 130px;
+        width: 70%;
+        height: 48vh;
+        grid-gap: 25px;
+        padding: 25px;
+    }
+    .big-box {
+        width: 20vw;
+        height: 20vh;
+        font-size: 15px;
+    }
+    .little-box {
+        width: 20vw;
+        height: 20vh;
+        font-size: 15px;
+    }
+    .text-join {
+        width: 60%;
+        height: 75%;
+        margin-bottom: 25px;
+    }
+    .box-contact{
+        width: 80%;
+    }
+    .box-copyright{
+        width: 80%;
+    }
+} 
