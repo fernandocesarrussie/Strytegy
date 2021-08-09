@@ -162,6 +162,9 @@ body{
     max-width: 1366px;
     margin: auto;
 }
+.box-interactive-mobile{
+    display: none;
+}
 .box-interactive{
     position: relative;
     top: 55px;
@@ -319,11 +322,14 @@ body{
     text-align: center;
     color: white;
 }
-.container-boxes{
+.container-cards{
     max-width: 1366px;
     margin: auto;
 }
-.boxes{
+.cards-mobile{
+    display: none;
+}
+.cards{
     position: relative;
     bottom: 110px;
     width: 72%;
@@ -336,7 +342,7 @@ body{
     grid-gap: 20px;
     padding: 25px;
 }
-.big-box{
+.big-cards{
     width: 16vw;
     height: 35vh;
     display: flex;
@@ -351,11 +357,11 @@ body{
     padding: 5px;
     background-color: white;
 }
-.img-boxes{
+.img-cards{
     width: 14vw;
     margin-bottom: 13px;
 }
-.little-box{
+.little-cards{
     width: 16vw;
     height: 21vh;
     display: flex;
@@ -614,6 +620,97 @@ body{
         width: 80%;
     }
 } 
+
+@media (max-width: 960px) {
+    .box-container {
+        width: 55%;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    .text-fs {
+        height: 70%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    .box-img-print {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .title-fths {
+        font-size: 40px;
+    }
+    .box-interactive {
+        display: none;
+    }
+    .cards {
+        position: relative;
+        bottom: 110px;
+        width: 100%;
+        height: 65vh;
+        margin: auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-flow: column wrap;
+        grid-gap: 20px;
+        padding: 25px;
+    }
+    .big-cards {
+        width: 27vw;
+        height: 27vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px 10px 10px 10px;
+        border: #22254B 2.5px solid;
+        font-family: 'Archivo', sans-serif;
+        text-align: center;
+        font-weight: 500;
+        padding: 5px;
+        background-color: white;
+    }
+    .little-cards {
+        width: 27vw;
+        height: 27vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px 10px 10px 10px;
+        border: #22254B 2.5px solid;
+        font-family: 'Archivo', sans-serif;
+        text-align: center;
+        font-weight: 500;
+        font-size: 15px;
+        padding: 5px;
+        background-color: white;
+    }
+    .box-img-interactive {
+        width: 55vw;
+        align-items: flex-end;
+    }
+    .text-join {
+        width: 100%;
+        height: 75%;
+        margin-bottom: 25px;
+    }
+    .title-bt-main {
+        font-family: 'Archivo', sans-serif;
+        text-align: center;
+        font-weight: 900;
+        font-size: 45px;
+        color: #22254B;
+    }
+    .list-help {
+        width: unset;
+    }
+}
+
 @media (max-width: 360px) {
     body{
         padding-top: 12px;
@@ -683,8 +780,38 @@ body{
         width: 110%;
     }
     .paragraph-ss {
-        font-size: 16px;
+        font-size: 21px;
         text-align: left;
+    }
+    .box-interactive{
+        display: none;
+    }
+    .box-interactive-mobile{
+        margin: auto;
+        position: relative;
+        top: 38px;
+        width: 80vw;
+        height: 7vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: white;
+        border-radius: 15px 15px 15px 15px;
+        box-shadow: #0000001a 0 4px 8px 0;
+    }
+    .interactive-menu {
+        width: 82%;
+        height: 88%;
+        display: flex;
+        padding: 5px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px 10px 10px 10px;
+        cursor: pointer;
+        transition: all 0.1s ease 0s;
+    }
+    .demo-screen {
+        height: 45vh;
     }
     .box-display-ss {
         height: 85%;
@@ -696,23 +823,24 @@ body{
     }
     .text-interactive {
         width: 80vw;
-        height: 30vh;
+        height: 72%;
     }
     .title-interactive {
         width: 82%;
         font-size: 25px;
     }
     .paragraph-interactive {
-        width: 80%;
-        font-size: 15px;
+        width: 100%;
+        font-size: 18px;
     }
     .third-screen {
-        height: 75vh;
+        height: 60vh;
         margin: unset;
         justify-content: space-evenly;
     }
     .box-img-ts {
-        width: 100%;
+        margin: 0 20px;
+        width: 95%;
     }
     .box-text-ts {
         width: 75%;
@@ -731,7 +859,8 @@ body{
         text-align: left;
     }
     .display-for-you {
-        height: 35vh;
+        justify-content: unset;
+        height: 32vh;
         padding-top: 15px;
         background-color: #22254B;
     }
@@ -759,10 +888,58 @@ body{
         text-align: left;
         color: white;
     }
-    .container-boxes {
-        height: 50vh;
+    .container-cards {
+        height: 15vh;
     }
-    .boxes {
+    .cards-mobile{
+        position: relative;
+        bottom: 100px;
+        display: flex;
+        justify-content: space-between;
+        width: 100vw;
+    }
+    .cards{
+        display: none;
+    }
+    .cards-action1 {
+        border-radius: 0px 10px 10px 0px;
+        border-right: #22254B 2.5px solid;
+        border-top: #22254B 2.5px solid;
+        border-bottom: #22254B 2.5px solid;
+        background-color: white;
+        width: 10%;
+        height: 15vh;
+        position: relative;
+        top: 15px;
+    }
+    .cards-action2{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px 10px 10px 10px;
+        border: #22254B 2.5px solid;
+        font-family: 'Archivo', sans-serif;
+        text-align: center;
+        font-weight: 500;
+        padding: 5px;
+        background-color: white;
+        width: 54%;
+        height: 18vh;
+        font-size: 15px;
+    }
+    .cards-action3{
+        border-radius: 10px 0px 0px 10px;
+        border-left: #22254B 2.5px solid;
+        border-top: #22254B 2.5px solid;
+        border-bottom: #22254B 2.5px solid;
+        background-color: white;
+        width: 10%;
+        height: 15vh;
+        position: relative;
+        top: 15px;
+    }
+    /* .boxes {
         bottom: 285px;
         right: 241px;
         width: 100%;
@@ -779,7 +956,7 @@ body{
     .img-boxes {
         width: 78%;
         margin-bottom: 13px;
-    }
+    } */
     .box-join {
         justify-content: space-evenly;
         height: 40vh;
